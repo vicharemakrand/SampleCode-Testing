@@ -1,0 +1,44 @@
+﻿@model SampleCode.ViewModels.UserViewModel
+
+<fieldset>
+    <legend>UserViewModel</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.UserName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.UserName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.FirstName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FirstName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.LastName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.LastName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.UpdatedOn)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.UpdatedOn)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.UpdatedBy)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.UpdatedBy)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
